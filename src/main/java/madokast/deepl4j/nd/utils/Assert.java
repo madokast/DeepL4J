@@ -1,4 +1,4 @@
-package madokast.deepl4j.nd;
+package madokast.deepl4j.nd.utils;
 
 /**
  * Assert

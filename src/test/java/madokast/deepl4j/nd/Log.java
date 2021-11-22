@@ -1,5 +1,8 @@
 package madokast.deepl4j.nd;
 
+import java.lang.reflect.Array;
+import java.util.Objects;
+
 /**
  * Log
  *

@@ -97,4 +97,10 @@ class NDArrConsTest {
         NDArr b = new NDArr(new float[2 * 3 * 4 * 5], new int[]{2, 3, 4, 5});
         Log.info(b.toString());
     }
+
+    @Test
+    public void test_cons14() {
+        NDArr b = new NDArr(new float[]{1, 2, 3, 4, 5}, new int[]{1, 5});
+        Log.info(b.toString());
+    }
 }
