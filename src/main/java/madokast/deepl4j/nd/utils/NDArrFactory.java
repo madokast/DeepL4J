@@ -1,9 +1,7 @@
 package madokast.deepl4j.nd.utils;
 
 import madokast.deepl4j.nd.NDArr;
-import sun.misc.Unsafe;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;

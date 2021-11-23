@@ -2,14 +2,10 @@ package madokast.deepl4j.nd;
 
 import madokast.deepl4j.nd.tools.NDCoordinateIter;
 import madokast.deepl4j.nd.utils.Assert;
-import madokast.deepl4j.nd.utils.NDArrFactory;
 import madokast.deepl4j.nd.utils.NDArrPosition;
-import sun.security.provider.SHA;
 
 import java.io.Serializable;
-import java.lang.reflect.Array;
 import java.util.Arrays;
-import java.util.Collections;
 
 /**
  * numpy 多维数组 float 格式

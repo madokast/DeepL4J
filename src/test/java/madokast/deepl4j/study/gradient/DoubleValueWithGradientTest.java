@@ -4,6 +4,7 @@ import madokast.deepl4j.nd.Log;
 import madokast.deepl4j.study.gradient.operator.Add;
 import madokast.deepl4j.study.gradient.operator.Multiple;
 import org.junit.jupiter.api.Test;
+import org.junit.platform.commons.logging.LoggerFactory;
 
 import static org.junit.jupiter.api.Assertions.*;
 
