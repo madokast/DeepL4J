@@ -1,6 +1,8 @@
 package madokast.deepl4j.nd.utils;
 
 import madokast.deepl4j.nd.NDArr;
+import madokast.deepl4j.nd.func.BinaryFloatFunction;
+import madokast.deepl4j.nd.func.UnaryFloatFunction;
 
 import java.util.Map;
 
@@ -56,7 +58,7 @@ public class ElementWiseFunc {
         return elementWiseApply(a, v -> (float) Math.tan(v));
     }
 
-    public static NDArr elementWiseApply(NDArr left, NDArr right, FloatBinaryFun fun) {
+    public static NDArr elementWiseApply(NDArr left, NDArr right, BinaryFloatFunction fun) {
         int da = left.dimensionNumber();
         int db = right.dimensionNumber();
         NDArr big, small;
@@ -77,7 +79,7 @@ public class ElementWiseFunc {
         return ret;
     }
 
-    public static NDArr elementWiseApply(NDArr left, float right, FloatBinaryFun fun) {
+    public static NDArr elementWiseApply(NDArr left, float right, BinaryFloatFunction fun) {
         NDArr ret = NDArrFactory.zerosLike(left);
         float[] data = ret.data();
         float[] dataLeft = left.data();
@@ -89,7 +91,7 @@ public class ElementWiseFunc {
         return ret;
     }
 
-    public static NDArr elementWiseApply(NDArr left, FloatUnaryFun fun) {
+    public static NDArr elementWiseApply(NDArr left, UnaryFloatFunction fun) {
         NDArr ret = NDArrFactory.zerosLike(left);
         float[] data = ret.data();
         float[] dataLeft = left.data();
@@ -102,11 +104,4 @@ public class ElementWiseFunc {
     }
 
 
-    private interface FloatBinaryFun {
-        float call(float left, float right);
-    }
-
-    private interface FloatUnaryFun {
-        float call(float val);
-    }
 }
