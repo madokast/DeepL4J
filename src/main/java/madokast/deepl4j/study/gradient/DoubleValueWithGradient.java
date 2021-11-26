@@ -3,6 +3,10 @@ package madokast.deepl4j.study.gradient;
 
 import java.util.Objects;
 
+/**
+ * 可计算梯度的变量
+ * 和 madokast.deepl4j.study.gradient.operator 中的运算配合使用
+ */
 public abstract class DoubleValueWithGradient implements OperatorTree {
 
     private final String identifier;

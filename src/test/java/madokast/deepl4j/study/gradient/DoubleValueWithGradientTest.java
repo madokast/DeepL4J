@@ -75,4 +75,6 @@ class DoubleValueWithGradientTest {
         Log.info(x2yAddX.gradient(y));
     }
 
+
+
 }

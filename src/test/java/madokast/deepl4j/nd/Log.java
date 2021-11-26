@@ -16,7 +16,7 @@ public class Log {
         StackTraceElement[] stackTrace = Thread.currentThread().getStackTrace();
         StackTraceElement stackTraceElement = stackTrace[2];
         System.out.println(
-                LocalTime.now().format(DateTimeFormatter.ISO_LOCAL_TIME).substring(0, 12) +
+                String.format("%-12s", LocalTime.now().format(DateTimeFormatter.ISO_LOCAL_TIME)).substring(0, 12) +
                         " [" + limit(stackTraceElement.getClassName(), 40) + "] " +
                         msg.toString()
         );

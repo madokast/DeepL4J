@@ -25,7 +25,7 @@ public class ProblemSolveI {
 
         float last_loss = loss(xs, ys, w0, b0, fun) * 10;
 
-        for (int i = 0; i < 50; i++) {
+        for (int i = 0; i < 10; i++) {
             float loss = loss(xs, ys, w0, b0, fun);
             float loss_dw = loss_dw(xs, ys, w0, b0, fun, fun_dw);
             float loss_db = loss_db(xs, ys, w0, b0, fun, fun_db);
